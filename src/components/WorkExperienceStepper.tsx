@@ -52,7 +52,7 @@ export default function WorkExperienceTimeline({
               </div>
 
               {/* Content */}
-              <div className="flex flex-col bg-white dark:bg-gray-800 rounded-lg p-5 border border-gray-100 shadow-[0_2px_8px_-3px_rgba(0,0,0,0.07)] hover:shadow-lg hover:border-blue-100 transition-all">
+              <div className="flex flex-col card-content">
                 {/* Header */}
                 <div className="flex items-start justify-between mb-3">
                   <div className="flex-1">

@@ -18,20 +18,20 @@ const contacts: ContractList[] = [
   },
   {
     icon: Linkedin,
-    href: 'https://www.linkedin.com/in/natthaphong-thepphithak',
-    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/natthaphong-thepphitha',
+    label: 'Natthaphong Thepphithak',
     color: 'text-blue-600 dark:text-blue-500',
   },
   {
     icon: Youtube,
-    href: 'https://www.youtube.com/@yourchannel',
-    label: 'YouTube',
+    href: 'https://www.youtube.com/@',
+    label: 'AuJung',
     color: 'text-red-500 dark:text-red-400',
   },
   {
     icon: Music,
     href: 'https://www.tiktok.com/@yourtiktok',
-    label: 'TikTok',
+    label: 'AuJung',
     color: 'text-pink-500 dark:text-pink-400',
   },
 ]
@@ -40,26 +40,28 @@ export default function Contact() {
   return (
     <Card>
       <CardContent className="p-6 space-y-4 flex flex-col">
-        {contacts.map(({ icon: Icon, href, label, color }, index) => (
-          <div key={index} className="flex items-center gap-3">
-            {/* Ensure `Icon` is rendered as a component */}
-            <Icon className={`w-5 h-5 ${color}`} />
-            {href ? (
-              <Link
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-lg font-medium hover:underline"
-              >
-                {label}
-              </Link>
-            ) : (
-              <span className="text-lg text-gray-700 dark:text-gray-300">
-                {label}
-              </span>
-            )}
-          </div>
-        ))}
+        <div className="card-content">
+          {contacts.map(({ icon: Icon, href, label, color }, index) => (
+            <div key={index} className="flex items-center gap-3">
+              {/* Ensure `Icon` is rendered as a component */}
+              <Icon className={`w-5 h-5 ${color}`} />
+              {href ? (
+                <Link
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg font-medium hover:underline"
+                >
+                  {label}
+                </Link>
+              ) : (
+                <span className="text-lg text-gray-700 dark:text-gray-300">
+                  {label}
+                </span>
+              )}
+            </div>
+          ))}
+        </div>
       </CardContent>
     </Card>
   )

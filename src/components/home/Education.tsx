@@ -7,7 +7,7 @@ export default function Education() {
     <Card>
       <CardContent className="p-6 flex flex-col md:flex-row justify-between gap-6">
         {/* Left Side: Education & Certifications */}
-        <div className="md:w-1/2 space-y-6">
+        <div className="md:w-1/2 space-y-6 card-content">
           {/* Education Section */}
           <div className="space-y-3">
             <h2 className="text-xl font-semibold flex items-center gap-2 text-blue-700 dark:text-blue-400">
@@ -46,7 +46,7 @@ export default function Education() {
         </div>
 
         {/* Right Side: Technical Skills */}
-        <div className="md:w-1/2 space-y-4">
+        <div className="md:w-1/2 space-y-4 card-content">
           <h2 className="text-xl font-semibold flex items-center gap-2 text-blue-700 dark:text-blue-400">
             <Code className="w-5 h-5 text-blue-600" />
             Technical Skills

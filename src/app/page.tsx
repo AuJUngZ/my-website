@@ -2,7 +2,7 @@ import Contract from '@/components/home/Contract'
 import Education from '@/components/home/Education'
 import MyImage from '@/components/home/MyImage'
 import Navbar from '@/components/Nav'
-import WorkExperienceTimeline from '@/components/Stepper'
+import WorkExperienceTimeline from '@/components/WorkExperienceStepper'
 import { Card, CardContent } from '@/components/ui/card'
 import workExperiences from '@/data/workEXP'
 
@@ -16,10 +16,10 @@ export default function Home() {
           <div className="lg:col-span-2 flex flex-col gap-4">
             {/* Normal-sized text (Hidden on XL screens) */}
             <div className="lg:hidden text-center">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight uppercase text-gray-900 dark:text-gray-100">
                 NATTHAPHONG
               </h1>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight uppercase text-gray-900 dark:text-gray-100">
                 THEPPHITHAK
               </h1>
             </div>
@@ -34,10 +34,10 @@ export default function Home() {
           <div className="lg:col-span-3 flex flex-col gap-3">
             {/* Larger text (Hidden on small screens) */}
             <div className="hidden lg:block text-left mb-3">
-              <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold">
+              <h1 className="text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight uppercase text-gray-900 dark:text-gray-100">
                 NATTHAPHONG
               </h1>
-              <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold">
+              <h1 className="text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight uppercase text-gray-900 dark:text-gray-100">
                 THEPPHITHAK
               </h1>
             </div>

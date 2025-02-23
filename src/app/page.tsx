@@ -1,13 +1,16 @@
 import Contract from '@/components/home/Contract'
 import Education from '@/components/home/Education'
 import MyImage from '@/components/home/MyImage'
+import WorkExperienceTimeline from '@/components/Stepper'
+import { Card, CardContent } from '@/components/ui/card'
+import workExperiences from '@/data/workEXP'
 
 export default function Home() {
   return (
     <div className="container mx-auto my-5 px-4">
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-4">
         {/* Left Side (40%) */}
-        <div className="lg:col-span-2 flex flex-col justify-center gap-4">
+        <div className="lg:col-span-2 flex flex-col gap-4">
           {/* Normal-sized text (Hidden on XL screens) */}
           <div className="lg:hidden text-center">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
@@ -25,7 +28,7 @@ export default function Home() {
         </div>
 
         {/* Right Side (60%) */}
-        <div className="lg:col-span-3 flex flex-col">
+        <div className="lg:col-span-3 flex flex-col gap-3">
           {/* Larger text (Hidden on small screens) */}
           <div className="hidden lg:block text-left mb-3">
             <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold">
@@ -40,9 +43,14 @@ export default function Home() {
           <Education />
 
           {/* Experience */}
-          <div className="mt-6 space-y-4 text-lg lg:text-xl">
-            <p>💼 Experience: 3+ years in full-stack web development</p>
-          </div>
+          <Card>
+            <CardContent>
+              <WorkExperienceTimeline
+                experiences={workExperiences}
+                currentPosition={0}
+              />
+            </CardContent>
+          </Card>
         </div>
       </div>
     </div>

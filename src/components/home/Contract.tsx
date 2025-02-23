@@ -38,31 +38,29 @@ const contacts: ContractList[] = [
 
 export default function Contact() {
   return (
-    <Card>
-      <CardContent className="p-6 space-y-4 flex flex-col">
-        <div className="card-content">
-          {contacts.map(({ icon: Icon, href, label, color }, index) => (
-            <div key={index} className="flex items-center gap-3">
-              {/* Ensure `Icon` is rendered as a component */}
-              <Icon className={`w-5 h-5 ${color}`} />
-              {href ? (
-                <Link
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-lg font-medium hover:underline"
-                >
-                  {label}
-                </Link>
-              ) : (
-                <span className="text-lg text-gray-700 dark:text-gray-300">
-                  {label}
-                </span>
-              )}
-            </div>
-          ))}
-        </div>
-      </CardContent>
-    </Card>
+    <div className="space-y-4 flex flex-col">
+      <div className="card-content">
+        {contacts.map(({ icon: Icon, href, label, color }, index) => (
+          <div key={index} className="flex items-center gap-3">
+            {/* Ensure `Icon` is rendered as a component */}
+            <Icon className={`w-5 h-5 ${color}`} />
+            {href ? (
+              <Link
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg font-medium hover:underline"
+              >
+                {label}
+              </Link>
+            ) : (
+              <span className="text-lg text-gray-700 dark:text-gray-300">
+                {label}
+              </span>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
   )
 }

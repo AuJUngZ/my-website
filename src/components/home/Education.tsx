@@ -78,10 +78,7 @@ export default function Education() {
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {skill.content.split(', ').map((item, i) => (
-                    <span
-                      key={i}
-                      className="px-3 py-1 text-xs font-medium rounded-full bg-blue-50 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400 border border-blue-100 dark:border-blue-800"
-                    >
+                    <span key={i} className="badge-tech">
                       {item}
                     </span>
                   ))}

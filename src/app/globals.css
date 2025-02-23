@@ -177,3 +177,7 @@
 .card-content {
   @apply dark:bg-gray-800 rounded-lg p-5 border border-gray-100 shadow-[0_2px_8px_-3px_rgba(0,0,0,0.07)] hover:shadow-lg hover:border-blue-100 transition-all;
 }
+
+.badge-tech {
+  @apply px-3 py-1 text-xs font-medium rounded-full bg-blue-50 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400 border border-blue-100 dark:border-blue-800
+}

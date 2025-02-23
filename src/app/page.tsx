@@ -5,6 +5,7 @@ import Navbar from '@/components/Nav'
 import WorkExperienceTimeline from '@/components/WorkExperienceStepper'
 import { Card, CardContent } from '@/components/ui/card'
 import workExperiences from '@/data/workEXP'
+import PaginatedProjectList from '@/components/home/Project'
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
               <MyImage />
               <Contract />
             </div>
+            <PaginatedProjectList />
           </div>
 
           {/* Right Side (60%) */}

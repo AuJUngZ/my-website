@@ -2,7 +2,6 @@ import { Project } from '@/types/project'
 
 export const projects: Project[] = [
   {
-    id: 1,
     name: 'Screetner (Street Scanner)',
     description: [
       'Designed and developed an end-to-end system for scanning local government assets as a senior project',
@@ -33,7 +32,21 @@ export const projects: Project[] = [
     status: 'Completed',
   },
   {
-    id: 2,
+    name: 'Functional Programming OCR Tools',
+    description: [
+      'Developing an OCR tool that integrates functional programming principles into imperative languages',
+      'Applying Higher-Order Functions, Currying, and Monads to enhance code readability and maintainability',
+      'Backend implemented in Python using PyMonad and Tesseract-OCR for efficient text extraction',
+      'Frontend built with Next.js, utilizing monadic concepts for streamlined side-effect management and error handling',
+      'Both backend and frontend incorporate different aspects of functional programming to ensure consistency and modularity',
+    ],
+    links: {
+      github: 'https://github.com/AuJUngZ/functional-OCR',
+    },
+    technologies: ['Haskell', 'Python', 'Next.js'],
+    status: 'In Progress',
+  },
+  {
     name: 'FacilitiesOps',
     description: [
       'Automated monitoring setup with ELK Stack, Prometheus, and Grafana, reducing manual configuration time',
@@ -47,7 +60,6 @@ export const projects: Project[] = [
     status: 'Completed',
   },
   {
-    id: 3,
     name: 'BOTMAPS',
     description: [
       'Developed a web application to visualize the floor plan of the Computer Engineering Department at Chiang Mai University',

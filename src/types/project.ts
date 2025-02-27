@@ -11,7 +11,6 @@ export type LinkTypeProps = {
 export type LinkType = Record<LinkTypeKey, LinkTypeProps>
 
 export type Project = {
-  id: number
   name: string
   description: string[]
   links?: Partial<Record<LinkTypeKey, string>> // e.g., { github: "url", youtube: "url" }

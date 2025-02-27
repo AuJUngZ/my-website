@@ -219,11 +219,15 @@ export default function PaginatedProjectList() {
           <FolderRoot className="w-5 h-5 text-blue-600" />
           Projects
         </h2>
+        {/* project count */}
+        <p className="text-gray-700 dark:text-gray-300">
+          Showing {currentPage} of {totalPages} pages
+        </p>
       </CardHeader>
       <CardContent className="space-y-4">
-        {paginatedProjects.map(project => (
+        {paginatedProjects.map((project, index) => (
           <div
-            key={project.id}
+            key={index}
             className="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md"
           >
             <div className="flex justify-between items-start mb-3">

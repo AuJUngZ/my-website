@@ -10,11 +10,11 @@ const contacts: ContractList[] = [
     label: 'natthaphong.thepphithak@gmail.com',
     color: 'text-blue-500 dark:text-blue-400',
   },
-  {
-    icon: Phone,
-    label: '+66 95-530-1640',
-    color: 'text-green-500 dark:text-green-400',
-  },
+  // {
+  //   icon: Phone,
+  //   label: '+66 95-530-1640',
+  //   color: 'text-green-500 dark:text-green-400',
+  // },
   {
     icon: Linkedin,
     href: 'https://www.linkedin.com/in/natthaphong-thepphitha',

@@ -217,7 +217,7 @@ export default function PaginatedProjectList() {
       <CardHeader>
         <h2 className="text-xl font-semibold flex items-center gap-2 text-blue-700 dark:text-blue-400">
           <FolderRoot className="w-5 h-5 text-blue-600" />
-          Projects
+          My Projects
         </h2>
         {/* project count */}
         <p className="text-gray-700 dark:text-gray-300">

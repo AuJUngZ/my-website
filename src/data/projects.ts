@@ -2,7 +2,7 @@ import { Project } from '@/types/project'
 
 export const projects: Project[] = [
   {
-    name: 'Screetner (Street Scanner)',
+    name: 'Screetner (Street Scanner) | Senior Project',
     description: [
       'Designed and developed an end-to-end system for scanning local government assets as a senior project',
       'Created a custom mobile application to capture asset data via video while driving',
@@ -29,6 +29,18 @@ export const projects: Project[] = [
       'Aure Container Instances',
       'Azure Container Registry',
     ],
+    status: 'Completed',
+  },
+  {
+    name: 'ENG CMU Scholarship Website',
+    description: [
+      'As a project manager, led a team of 5 developers to complete this system within 1 year',
+      'Developed a website to streamline the scholarship application process for the Faculty of Engineering, Chiang Mai University',
+      'Designed and implemented a comprehensive Scholarship Management System consisting of two main websites and a backend API service.',
+      'Total users for each year around 500+ students and 50+ staff members',
+    ],
+    links: {},
+    technologies: ['React', 'NextJS', 'MySQL', 'On-Premise Server', 'Docker'],
     status: 'Completed',
   },
   {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Mail, Phone, Linkedin, Youtube, Music } from 'lucide-react'
+import { Mail, Linkedin, Youtube, Music } from 'lucide-react'
 import Link from 'next/link'
 import { ContractList } from '@/types/contract'
 

@@ -1,6 +1,6 @@
 import Contract from '@/components/home/Contract'
 import Education from '@/components/home/Education'
-import MyImage from '@/components/home/MyImage'
+// import MyImage from '@/components/home/MyImage'
 import Navbar from '@/components/Nav'
 import WorkExperienceTimeline from '@/components/WorkExperienceStepper'
 import { Card, CardContent } from '@/components/ui/card'

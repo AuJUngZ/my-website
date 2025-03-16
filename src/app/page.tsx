@@ -26,7 +26,7 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col md:flex-row lg:flex-col gap-4">
-              <MyImage />
+              {/* <MyImage /> */}
               <Contract />
             </div>
             <PaginatedProjectList />

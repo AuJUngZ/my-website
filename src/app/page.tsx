@@ -1,6 +1,6 @@
 import Contract from '@/components/home/Contract'
 import Education from '@/components/home/Education'
-// import MyImage from '@/components/home/MyImage'
+import MyImage from '@/components/home/MyImage'
 import Navbar from '@/components/Nav'
 import WorkExperienceTimeline from '@/components/WorkExperienceStepper'
 import { Card, CardContent } from '@/components/ui/card'
@@ -26,7 +26,7 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col md:flex-row lg:flex-col gap-4">
-              {/* <MyImage /> */}
+              <MyImage />
               <Contract />
             </div>
             <PaginatedProjectList />

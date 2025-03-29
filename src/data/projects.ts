@@ -56,7 +56,7 @@ export const projects: Project[] = [
       github: 'https://github.com/AuJUngZ/functional-OCR',
     },
     technologies: ['Haskell', 'Python', 'Next.js'],
-    status: 'In Progress',
+    status: 'Completed',
   },
   {
     name: 'FacilitiesOps',
@@ -69,6 +69,27 @@ export const projects: Project[] = [
       github: 'https://github.com/AuJUngZ/facilities-k8s-cluster',
     },
     technologies: ['ELK Stack', 'Prometheus', 'Grafana', 'Helm', 'Kubernetes'],
+    status: 'Completed',
+  },
+  {
+    name: 'GitOps Demonstration',
+    description: [
+      'Terraform script to create a VPC with public and private subnets in AWS also with script for create an EKS cluster and node group to test ArgoCD if needed.',
+      'ArgoCD configuration to deploy a simple nodejs application.',
+      'Simple nodejs application to test GitOps including a simple express server and a Dockerfile to build the image.',
+      'Github action workflow to build the Docker image and push it to AWS public ECR repository then automatically update the ArgoCD deployment configuration to let ArgoCD rollout the new version of the application.',
+    ],
+    links: {
+      github: 'https://github.com/AuJUngZ/Unit-DevOps',
+    },
+    technologies: [
+      'AWS',
+      'Terraform',
+      'GitHub Actions',
+      'ArgoCD',
+      'Docker',
+      'Node.js',
+    ],
     status: 'Completed',
   },
   {

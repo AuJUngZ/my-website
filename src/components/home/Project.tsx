@@ -15,6 +15,13 @@ import {
 import Link from 'next/link'
 import { Project, LinkTypeKey } from '@/types/project'
 import { projects } from '@/data/projects'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select'
 
 // Define known link types as a constant object for consistent ordering and control
 const LINK_TYPES = {
@@ -44,6 +51,12 @@ export default function PaginatedProjectList() {
 
   const handlePageChange = (page: number) => {
     setCurrentPage(Math.max(1, Math.min(page, totalPages)))
+  }
+
+  const handleProjectSelect = (projectIndex: string) => {
+    // Convert string to number and add 1 (to match 1-based page index)
+    const projectPage = Number(projectIndex) + 1
+    setCurrentPage(projectPage)
   }
 
   const getStatusColor = (status: Project['status']) => {
@@ -212,14 +225,39 @@ export default function PaginatedProjectList() {
     )
   }
 
+  // Project dropdown menu
+  const renderProjectDropdown = () => {
+    return (
+      <div className="w-full max-w-xs">
+        <Select
+          value={(currentPage - 1).toString()}
+          onValueChange={handleProjectSelect}
+        >
+          <SelectTrigger className="w-full">
+            <SelectValue placeholder="Select a project" />
+          </SelectTrigger>
+          <SelectContent>
+            {projects.map((project, index) => (
+              <SelectItem key={index} value={index.toString()}>
+                {project.name}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
+      </div>
+    )
+  }
+
   return (
     <Card>
       <CardHeader>
-        <h2 className="text-xl font-semibold flex items-center gap-2 text-blue-700 dark:text-blue-400">
-          <FolderRoot className="w-5 h-5 text-blue-600" />
-          My Projects
-        </h2>
-        {/* project count */}
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4">
+          <h2 className="text-xl font-semibold flex items-center gap-2 text-blue-700 dark:text-blue-400">
+            <FolderRoot className="w-5 h-5 text-blue-600" />
+            My Projects
+          </h2>
+          {renderProjectDropdown()}
+        </div>
         <p className="text-gray-700 dark:text-gray-300">
           Showing {currentPage} of {totalPages} pages
         </p>

@@ -60,7 +60,7 @@ export default function Education() {
               },
               {
                 title: 'Databases',
-                content: 'MySQL, PostgreSQL, MongoDB, SQL',
+                content: 'MySQL, PostgreSQL, MongoDB',
               },
               {
                 title: 'Web Development',
@@ -69,7 +69,7 @@ export default function Education() {
               {
                 title: 'DevOps & Cloud',
                 content:
-                  'Docker, Kubernetes, Jenkins, ArgoCD, Azure, Terraform',
+                  'Docker, Kubernetes, Jenkins, ArgoCD, Azure, AWS, Terraform',
               },
             ].map((skill, index) => (
               <div key={index} className="space-y-1">

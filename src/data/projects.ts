@@ -12,7 +12,7 @@ export const projects: Project[] = [
     ],
     links: {
       github: 'https://github.com/screetner',
-      youtube: 'https://youtube.com/screetner-demo',
+      youtube: 'https://youtu.be/UtuHX06IxK8',
     },
     technologies: [
       'Flutter',

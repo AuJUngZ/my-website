@@ -111,4 +111,23 @@ export const projects: Project[] = [
     ],
     status: 'Completed',
   },
+  {
+    name: 'Elderly Health Tracking System',
+    description: [
+      'The system supports two user roles: volunteers and administrators.',
+      'Volunteers visit elderly individuals, assess their health, and log their status in the system.',
+      'Administrators oversee elderly health records, monitor well-being, and assign volunteers for home visits.',
+      'Built with LINE LIFF and LINE OA, ensuring an intuitive and accessible interface for volunteers.',
+      'Tracks multiple health metrics, including mental health, ADL, emergency requests, health history, and visit appointments.',
+    ],
+    technologies: [
+      'Vue.js',
+      'Vuex',
+      'LINE LIFF',
+      'LINE OA',
+      'MySQL',
+      'PHP Laravel',
+    ],
+    status: 'Completed',
+  },
 ]

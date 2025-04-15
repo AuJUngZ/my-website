@@ -14,11 +14,12 @@ export default function Education() {
               <GraduationCap className="w-5 h-5 text-blue-600" />
               Education
             </h2>
-            <p className="text-lg text-gray-700 dark:text-gray-300 font-medium">
-              Chiang Mai University, Chiang Mai, Thailand
+            <p className="text-lg text-gray-700 dark:text-gray-300 font-bold">
+              Bachelor of Engineering in Computer Engineering, Chiang Mai
+              University
             </p>
             <p className="inline-block px-3 py-1 rounded-full text-sm bg-blue-50 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400 border border-blue-100 dark:border-blue-800">
-              🎓 GPA: 3.85 (First-Class Honors)
+              🎓 GPA: 3.87 (First-Class Honors)
             </p>
           </div>
 

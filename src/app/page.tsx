@@ -1,10 +1,11 @@
-import Contract from '@/components/home/Contract'
 import Education from '@/components/home/Education'
 import MyImage from '@/components/home/MyImage'
 import Navbar from '@/components/Nav'
 import WorkExperienceTimeline from '@/components/WorkExperienceStepper'
+import Skills from '@/components/home/Skills'
 import { Card, CardContent } from '@/components/ui/card'
 import workExperiences from '@/data/workEXP'
+import skillsData from '@/data/skillSet'
 import PaginatedProjectList from '@/components/home/Project'
 
 export default function Home() {
@@ -24,14 +25,12 @@ export default function Home() {
                 THEPPHITHAK
               </h1>
             </div>
-
             <div className="flex flex-col md:flex-row lg:flex-col gap-4">
               <MyImage />
-              <Contract />
+              {/* <Contract /> */}
             </div>
             <PaginatedProjectList />
           </div>
-
           {/* Right Side (60%) */}
           <div className="lg:col-span-3 flex flex-col gap-3">
             {/* Larger text (Hidden on small screens) */}
@@ -43,10 +42,8 @@ export default function Home() {
                 THEPPHITHAK
               </h1>
             </div>
-
             {/* Education */}
             <Education />
-
             {/* Experience */}
             <Card>
               <CardContent>
@@ -56,7 +53,11 @@ export default function Home() {
                 />
               </CardContent>
             </Card>
+            {/* Skills and Libraries */}
           </div>
+        </div>
+        <div className="mt-5">
+          <Skills skillsData={skillsData} />
         </div>
       </div>
     </>
